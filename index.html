@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="calculator">
+        <div id="display">0</div>
+        <div class="row">
+            <button onclick="pressNum(this)">7</button>
+            <button onclick="pressNum(this)">8</button>
+            <button onclick="pressNum(this)">9</button>
+            <button  class="operator" onclick="opt('/',this)">&divide;</button>
+        </div>
+        <div class="row">
+            <button onclick="pressNum(this)">4</button>
+            <button onclick="pressNum(this)">5</button>
+            <button onclick="pressNum(this)">6</button>
+            <button class="operator" onclick="opt('*',this)">&times;</button>
+        </div>
+        <div class="row">
+            <button onclick="pressNum(this)">1</button>
+            <button onclick="pressNum(this)">2</button>
+            <button onclick="pressNum(this)">3</button>
+            <button class="operator" onclick="opt('-',this)">&minus;</button>
+        </div>
+        <div class="row">
+            <button onclick="clearBtn(this)">C</button>
+            <button onclick="pressNum(this)">0</button>
+            <button onclick="pressNum(this)">.</button>
+            <button class="operator" onclick="opt('+',this)">&plus;</button>
+        </div>
+        <div class="row">
+            <button id="equals" onclick="calculate()">&equals;
+        </div>
+    </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
